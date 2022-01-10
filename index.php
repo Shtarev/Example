@@ -32,6 +32,12 @@ use src\classes\Test;
     $test = new Test;
     echo $test->echo_test;
     ?>
+    <?php
+    $mem0=memory_get_usage();
+    $tim0 = microtime(true);
+    // code
+    echo "<hr>Количество памяти выделенной PHP: ".$mem0." байт<br>На обработку скриптов потрачено байт: ".(memory_get_usage()-$mem0)."<br>На обработку скриптов потрачено секунд: ".(microtime(true) - $tim0)."<hr>";
+    ?>
 
     <script src="/js/script.js"></script>
 </body>
