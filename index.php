@@ -36,11 +36,7 @@ use src\classes\Test;
     $mem0=memory_get_usage();
     $tim0 = microtime(true);
     // code
-<<<<<<< HEAD
-    echo "<hr>Количество выделенной памяти: ".$mem0." байт<br>байт: ".(memory_get_usage()-$mem0)."<br>секунд: ".(microtime(true) - $tim0)."<hr>";
-=======
-    echo "<hr>Количество памяти выделенной PHP: ".$mem0." байт<br>потрачено байт: ".(memory_get_usage()-$mem0)."<br>потрачено секунд: ".(microtime(true) - $tim0)."<hr>";
->>>>>>> f2720597eaeb83a25e5b7b74527ec30b4e0b5143
+    echo "<hr>Количество памяти выделенной PHP: ".$mem0." байт<br>байт: ".(memory_get_usage()-$mem0)."<br>екунд: ".(microtime(true) - $tim0)."<hr>";
     ?>
 
     <script src="/js/script.js"></script>
